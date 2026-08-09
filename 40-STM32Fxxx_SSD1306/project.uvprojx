@@ -11,7 +11,8 @@
       <ToolsetNumber>0x4</ToolsetNumber>
       <ToolsetName>ARM-ADS</ToolsetName>
       <pArmCC>6220000::V6.22::ARMCLANG</pArmCC>
-      <uAC6>8</uAC6>
+      <pCCUsed>6220000::V6.22::ARMCLANG</pCCUsed>
+      <uAC6>9</uAC6>
       <TargetOption>
         <TargetCommonOption>
           <Device>STM32F429AGHx</Device>
@@ -8197,7 +8198,7 @@
       <TargetName>NUCLEO_F401 HSE 8MHz</TargetName>
       <ToolsetNumber>0x4</ToolsetNumber>
       <ToolsetName>ARM-ADS</ToolsetName>
-      <uAC6>8</uAC6>
+      <uAC6>0</uAC6>
       <TargetOption>
         <TargetCommonOption>
           <Device>STM32F401RETx</Device>
@@ -10242,7 +10243,7 @@
       <TargetName>NUCLEO_F401 HSI 16MHz</TargetName>
       <ToolsetNumber>0x4</ToolsetNumber>
       <ToolsetName>ARM-ADS</ToolsetName>
-      <uAC6>8</uAC6>
+      <uAC6>0</uAC6>
       <TargetOption>
         <TargetCommonOption>
           <Device>STM32F401RETx</Device>
@@ -12287,7 +12288,7 @@
       <TargetName>NUCLEO_F411 HSE 8MHz</TargetName>
       <ToolsetNumber>0x4</ToolsetNumber>
       <ToolsetName>ARM-ADS</ToolsetName>
-      <uAC6>8</uAC6>
+      <uAC6>0</uAC6>
       <TargetOption>
         <TargetCommonOption>
           <Device>STM32F411RETx</Device>
@@ -14332,7 +14333,7 @@
       <TargetName>NUCLEO_F411 HSI 16MHz</TargetName>
       <ToolsetNumber>0x4</ToolsetNumber>
       <ToolsetName>ARM-ADS</ToolsetName>
-      <uAC6>8</uAC6>
+      <uAC6>0</uAC6>
       <TargetOption>
         <TargetCommonOption>
           <Device>STM32F411RETx</Device>
@@ -16377,7 +16378,7 @@
       <TargetName>NUCLEO_F446 HSE 8MHz</TargetName>
       <ToolsetNumber>0x4</ToolsetNumber>
       <ToolsetName>ARM-ADS</ToolsetName>
-      <uAC6>8</uAC6>
+      <uAC6>0</uAC6>
       <TargetOption>
         <TargetCommonOption>
           <Device>STM32F446RETx</Device>
@@ -18422,7 +18423,7 @@
       <TargetName>NUCLEO_F446 HSI 16MHz</TargetName>
       <ToolsetNumber>0x4</ToolsetNumber>
       <ToolsetName>ARM-ADS</ToolsetName>
-      <uAC6>8</uAC6>
+      <uAC6>0</uAC6>
       <TargetOption>
         <TargetCommonOption>
           <Device>STM32F446RETx</Device>
@@ -20467,7 +20468,7 @@
       <TargetName>STM32F439_EVAL</TargetName>
       <ToolsetNumber>0x4</ToolsetNumber>
       <ToolsetName>ARM-ADS</ToolsetName>
-      <uAC6>8</uAC6>
+      <uAC6>0</uAC6>
       <TargetOption>
         <TargetCommonOption>
           <Device>STM32F439NIHx</Device>
@@ -22512,7 +22513,7 @@
       <TargetName>STM32F7_DISCOVERY</TargetName>
       <ToolsetNumber>0x4</ToolsetNumber>
       <ToolsetName>ARM-ADS</ToolsetName>
-      <uAC6>8</uAC6>
+      <uAC6>0</uAC6>
       <TargetOption>
         <TargetCommonOption>
           <Device>STM32F746NGHx</Device>
@@ -24291,7 +24292,7 @@
       <TargetName>NUCLEO_F091 HSI 8MHz</TargetName>
       <ToolsetNumber>0x4</ToolsetNumber>
       <ToolsetName>ARM-ADS</ToolsetName>
-      <uAC6>8</uAC6>
+      <uAC6>0</uAC6>
       <TargetOption>
         <TargetCommonOption>
           <Device>STM32F091RC</Device>

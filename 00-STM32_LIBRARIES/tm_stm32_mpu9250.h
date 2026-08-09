@@ -80,7 +80,7 @@ extern "C" {
 
 #ifndef MPU9250_I2C
 #define MPU9250_I2C             I2C1
-#define MPU9250_I2C_PP          TM_I2C_PinsPack_2
+#define MPU9250_I2C_PP          TM_I2C_PinsPack_1
 #endif
 
 #define MPU9250_I2C_CLOCK       400000

@@ -4304,7 +4304,6 @@
       <TargetName>STM32F411_DISCOVERY</TargetName>
       <ToolsetNumber>0x4</ToolsetNumber>
       <ToolsetName>ARM-ADS</ToolsetName>
-      <pArmCC>6220000::V6.22::ARMCLANG</pArmCC>
       <pCCUsed>6220000::V6.22::ARMCLANG</pCCUsed>
       <uAC6>1</uAC6>
       <TargetOption>
@@ -4485,7 +4484,7 @@
             <hadIRAM2>0</hadIRAM2>
             <hadIROM2>0</hadIROM2>
             <StupSel>0</StupSel>
-            <useUlib>0</useUlib>
+            <useUlib>1</useUlib>
             <EndSel>0</EndSel>
             <uLtcg>0</uLtcg>
             <nSecure>0</nSecure>
@@ -4609,7 +4608,7 @@
           </ArmAdsMisc>
           <Cads>
             <interw>1</interw>
-            <Optim>2</Optim>
+            <Optim>7</Optim>
             <oTime>0</oTime>
             <SplitLS>0</SplitLS>
             <OneElfS>1</OneElfS>
@@ -4624,7 +4623,7 @@
             <uC99>1</uC99>
             <uGnu>0</uGnu>
             <useXO>0</useXO>
-            <v6Lang>5</v6Lang>
+            <v6Lang>3</v6Lang>
             <v6LangP>3</v6LangP>
             <vShortEn>1</vShortEn>
             <vShortWch>1</vShortWch>
@@ -4633,7 +4632,7 @@
             <v6Rtti>0</v6Rtti>
             <VariousControls>
               <MiscControls></MiscControls>
-              <Define></Define>
+              <Define>STM32F411xE,USE_HAL_DRIVER,ARM_MATH_CM4,STM32F4XX,NUCLEO_F411,HSE_VALUE=8000000,RCC_OSCILLATORTYPE=RCC_OSCILLATORTYPE_HSI,RCC_PLLM=16,RCC_PLLN=400,RCC_PLLP=4,RCC_PLLQ=7</Define>
               <Undefine></Undefine>
               <IncludePath>.\User;.\TM;..\00-STM32_LIBRARIES;..\00-HAL_DRIVERS\STM32F4xx_HAL_Driver\Inc;..\00-HAL_DRIVERS\CMSIS\Device\ST\STM32F4xx\Include;..\00-HAL_DRIVERS\CMSIS\Include</IncludePath>
             </VariousControls>
@@ -10027,6 +10026,7 @@
       <TargetName>NUCLEO_F411 HSI 16MHz</TargetName>
       <ToolsetNumber>0x4</ToolsetNumber>
       <ToolsetName>ARM-ADS</ToolsetName>
+      <pCCUsed>6220000::V6.22::ARMCLANG</pCCUsed>
       <uAC6>0</uAC6>
       <TargetOption>
         <TargetCommonOption>
@@ -10330,7 +10330,7 @@
           </ArmAdsMisc>
           <Cads>
             <interw>1</interw>
-            <Optim>1</Optim>
+            <Optim>2</Optim>
             <oTime>0</oTime>
             <SplitLS>0</SplitLS>
             <OneElfS>0</OneElfS>
@@ -10345,8 +10345,8 @@
             <uC99>0</uC99>
             <uGnu>0</uGnu>
             <useXO>0</useXO>
-            <v6Lang>0</v6Lang>
-            <v6LangP>0</v6LangP>
+            <v6Lang>1</v6Lang>
+            <v6LangP>3</v6LangP>
             <vShortEn>1</vShortEn>
             <vShortWch>1</vShortWch>
             <v6Lto>0</v6Lto>
@@ -12889,7 +12889,8 @@
       <TargetName>NUCLEO_F446 HSI 16MHz</TargetName>
       <ToolsetNumber>0x4</ToolsetNumber>
       <ToolsetName>ARM-ADS</ToolsetName>
-      <uAC6>0</uAC6>
+      <pCCUsed>6220000::V6.22::ARMCLANG</pCCUsed>
+      <uAC6>1</uAC6>
       <TargetOption>
         <TargetCommonOption>
           <Device>STM32F446RETx</Device>
@@ -13192,7 +13193,7 @@
           </ArmAdsMisc>
           <Cads>
             <interw>1</interw>
-            <Optim>1</Optim>
+            <Optim>7</Optim>
             <oTime>0</oTime>
             <SplitLS>0</SplitLS>
             <OneElfS>0</OneElfS>
@@ -13207,8 +13208,8 @@
             <uC99>0</uC99>
             <uGnu>0</uGnu>
             <useXO>0</useXO>
-            <v6Lang>0</v6Lang>
-            <v6LangP>0</v6LangP>
+            <v6Lang>1</v6Lang>
+            <v6LangP>3</v6LangP>
             <vShortEn>1</vShortEn>
             <vShortWch>1</vShortWch>
             <v6Lto>0</v6Lto>

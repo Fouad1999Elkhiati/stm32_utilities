@@ -54,7 +54,7 @@ uint8_t TM_SSD1306_Init(void) {
 	TM_I2C_Init(SSD1306_I2C, SSD1306_I2C_PINSPACK, 400000);
 	
 	/* Otherwise I2C already initialized by MPU9250, skip */
-	
+		
 	/* Check if LCD connected to I2C */
 	if (TM_I2C_IsDeviceConnected(SSD1306_I2C, SSD1306_I2C_ADDR) != TM_I2C_Result_Ok) {
 		/* Return false */

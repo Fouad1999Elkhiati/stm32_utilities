@@ -124,7 +124,7 @@ SDA        |PC9          |Serial data line
 /* I2C settings */
 #ifndef SSD1306_I2C
 #define SSD1306_I2C              I2C1
-#define SSD1306_I2C_PINSPACK     TM_I2C_PinsPack_2
+#define SSD1306_I2C_PINSPACK     TM_I2C_PinsPack_1
 #endif
 
 /* I2C address */
