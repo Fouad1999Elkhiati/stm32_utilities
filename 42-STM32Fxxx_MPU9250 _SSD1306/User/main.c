@@ -108,19 +108,23 @@ int main(void) {
         TM_SSD1306_Puts(buf, &TM_Font_7x10, SSD1306_COLOR_WHITE);
 
         fmt(buf, "Ay:", MPU9250.Ay);
-        TM_SSD1306_GotoXY(0, 12);
+        TM_SSD1306_GotoXY(0, 10);
         TM_SSD1306_Puts(buf, &TM_Font_7x10, SSD1306_COLOR_WHITE);
 
         fmt(buf, "Az:", MPU9250.Az);
-        TM_SSD1306_GotoXY(0, 24);
+        TM_SSD1306_GotoXY(0, 20);
         TM_SSD1306_Puts(buf, &TM_Font_7x10, SSD1306_COLOR_WHITE);
 
         fmt(buf, "Gx:", MPU9250.Gx);
-        TM_SSD1306_GotoXY(0, 36);
+        TM_SSD1306_GotoXY(0, 30);
         TM_SSD1306_Puts(buf, &TM_Font_7x10, SSD1306_COLOR_WHITE);
 
         fmt(buf, "Gy:", MPU9250.Gy);
-        TM_SSD1306_GotoXY(0, 48);
+        TM_SSD1306_GotoXY(0, 40);
+        TM_SSD1306_Puts(buf, &TM_Font_7x10, SSD1306_COLOR_WHITE);
+
+        fmt(buf, "Gz:", MPU9250.Gz);
+        TM_SSD1306_GotoXY(0, 50);
         TM_SSD1306_Puts(buf, &TM_Font_7x10, SSD1306_COLOR_WHITE);
 
         TM_SSD1306_UpdateScreen();
