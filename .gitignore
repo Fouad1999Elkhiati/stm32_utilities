@@ -85,3 +85,4 @@
 # Keep Keil options for the EKF project: persists F411 target selection
 # and ST-Link debugger config so a fresh clone opens ready to flash.
 !43-STM32Fxxx_MPU9250 _EKF/project.uvoptx
+!42-STM32Fxxx_MPU9250 _SSD1306/project.uvoptx
