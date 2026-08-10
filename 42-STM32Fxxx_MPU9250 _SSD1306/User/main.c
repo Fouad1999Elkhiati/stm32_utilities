@@ -10,7 +10,10 @@
  * under the 32 KB MDK-Lite linker limit.
  */
 
+/* Include core modules */
 #include "stm32fxxx_hal.h"
+
+/* Include my libraries here */
 #include "defines.h"
 #include "tm_stm32_disco.h"
 #include "tm_stm32_delay.h"
