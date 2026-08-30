@@ -1449,31 +1449,6 @@
               <FileType>1</FileType>
               <FilePath>.\User\ekf.c</FilePath>
             </File>
-          </Files>
-        </Group>
-        <Group>
-          <GroupName>App</GroupName>
-          <Files>
-            <File>
-              <FileName>imu_port.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\User\imu_port.c</FilePath>
-            </File>
-            <File>
-              <FileName>magcal.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\User\magcal.c</FilePath>
-            </File>
-            <File>
-              <FileName>ekf.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\User\ekf.c</FilePath>
-            </File>
-            <File>
-              <FileName>main.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\User\main.c</FilePath>
-            </File>
             <File>
               <FileName>Gauss_elimination.c</FileName>
               <FileType>1</FileType>
@@ -2926,31 +2901,6 @@
               <FileType>1</FileType>
               <FilePath>.\User\ekf.c</FilePath>
             </File>
-          </Files>
-        </Group>
-        <Group>
-          <GroupName>App</GroupName>
-          <Files>
-            <File>
-              <FileName>imu_port.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\User\imu_port.c</FilePath>
-            </File>
-            <File>
-              <FileName>magcal.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\User\magcal.c</FilePath>
-            </File>
-            <File>
-              <FileName>ekf.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\User\ekf.c</FilePath>
-            </File>
-            <File>
-              <FileName>main.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\User\main.c</FilePath>
-            </File>
             <File>
               <FileName>Gauss_elimination.c</FileName>
               <FileType>1</FileType>
@@ -4400,31 +4350,6 @@
               <FileName>ekf.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\User\ekf.c</FilePath>
-            </File>
-          </Files>
-        </Group>
-        <Group>
-          <GroupName>App</GroupName>
-          <Files>
-            <File>
-              <FileName>imu_port.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\User\imu_port.c</FilePath>
-            </File>
-            <File>
-              <FileName>magcal.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\User\magcal.c</FilePath>
-            </File>
-            <File>
-              <FileName>ekf.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\User\ekf.c</FilePath>
-            </File>
-            <File>
-              <FileName>main.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\User\main.c</FilePath>
             </File>
             <File>
               <FileName>Gauss_elimination.c</FileName>
@@ -5877,31 +5802,6 @@
               <FileType>1</FileType>
               <FilePath>.\User\ekf.c</FilePath>
             </File>
-          </Files>
-        </Group>
-        <Group>
-          <GroupName>App</GroupName>
-          <Files>
-            <File>
-              <FileName>imu_port.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\User\imu_port.c</FilePath>
-            </File>
-            <File>
-              <FileName>magcal.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\User\magcal.c</FilePath>
-            </File>
-            <File>
-              <FileName>ekf.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\User\ekf.c</FilePath>
-            </File>
-            <File>
-              <FileName>main.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\User\main.c</FilePath>
-            </File>
             <File>
               <FileName>Gauss_elimination.c</FileName>
               <FileType>1</FileType>
@@ -7352,31 +7252,6 @@
               <FileType>1</FileType>
               <FilePath>.\User\ekf.c</FilePath>
             </File>
-          </Files>
-        </Group>
-        <Group>
-          <GroupName>App</GroupName>
-          <Files>
-            <File>
-              <FileName>imu_port.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\User\imu_port.c</FilePath>
-            </File>
-            <File>
-              <FileName>magcal.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\User\magcal.c</FilePath>
-            </File>
-            <File>
-              <FileName>ekf.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\User\ekf.c</FilePath>
-            </File>
-            <File>
-              <FileName>main.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\User\main.c</FilePath>
-            </File>
             <File>
               <FileName>Gauss_elimination.c</FileName>
               <FileType>1</FileType>
@@ -8826,31 +8701,6 @@
               <FileName>ekf.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\User\ekf.c</FilePath>
-            </File>
-          </Files>
-        </Group>
-        <Group>
-          <GroupName>App</GroupName>
-          <Files>
-            <File>
-              <FileName>imu_port.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\User\imu_port.c</FilePath>
-            </File>
-            <File>
-              <FileName>magcal.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\User\magcal.c</FilePath>
-            </File>
-            <File>
-              <FileName>ekf.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\User\ekf.c</FilePath>
-            </File>
-            <File>
-              <FileName>main.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\User\main.c</FilePath>
             </File>
             <File>
               <FileName>Gauss_elimination.c</FileName>
@@ -10303,31 +10153,6 @@
               <FileType>1</FileType>
               <FilePath>.\User\ekf.c</FilePath>
             </File>
-          </Files>
-        </Group>
-        <Group>
-          <GroupName>App</GroupName>
-          <Files>
-            <File>
-              <FileName>imu_port.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\User\imu_port.c</FilePath>
-            </File>
-            <File>
-              <FileName>magcal.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\User\magcal.c</FilePath>
-            </File>
-            <File>
-              <FileName>ekf.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\User\ekf.c</FilePath>
-            </File>
-            <File>
-              <FileName>main.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\User\main.c</FilePath>
-            </File>
             <File>
               <FileName>Gauss_elimination.c</FileName>
               <FileType>1</FileType>
@@ -11778,31 +11603,6 @@
               <FileName>ekf.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\User\ekf.c</FilePath>
-            </File>
-          </Files>
-        </Group>
-        <Group>
-          <GroupName>App</GroupName>
-          <Files>
-            <File>
-              <FileName>imu_port.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\User\imu_port.c</FilePath>
-            </File>
-            <File>
-              <FileName>magcal.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\User\magcal.c</FilePath>
-            </File>
-            <File>
-              <FileName>ekf.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\User\ekf.c</FilePath>
-            </File>
-            <File>
-              <FileName>main.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\User\main.c</FilePath>
             </File>
             <File>
               <FileName>Gauss_elimination.c</FileName>
@@ -13256,31 +13056,6 @@
               <FileType>1</FileType>
               <FilePath>.\User\ekf.c</FilePath>
             </File>
-          </Files>
-        </Group>
-        <Group>
-          <GroupName>App</GroupName>
-          <Files>
-            <File>
-              <FileName>imu_port.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\User\imu_port.c</FilePath>
-            </File>
-            <File>
-              <FileName>magcal.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\User\magcal.c</FilePath>
-            </File>
-            <File>
-              <FileName>ekf.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\User\ekf.c</FilePath>
-            </File>
-            <File>
-              <FileName>main.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\User\main.c</FilePath>
-            </File>
             <File>
               <FileName>Gauss_elimination.c</FileName>
               <FileType>1</FileType>
@@ -14732,31 +14507,6 @@
               <FileType>1</FileType>
               <FilePath>.\User\ekf.c</FilePath>
             </File>
-          </Files>
-        </Group>
-        <Group>
-          <GroupName>App</GroupName>
-          <Files>
-            <File>
-              <FileName>imu_port.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\User\imu_port.c</FilePath>
-            </File>
-            <File>
-              <FileName>magcal.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\User\magcal.c</FilePath>
-            </File>
-            <File>
-              <FileName>ekf.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\User\ekf.c</FilePath>
-            </File>
-            <File>
-              <FileName>main.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\User\main.c</FilePath>
-            </File>
             <File>
               <FileName>Gauss_elimination.c</FileName>
               <FileType>1</FileType>
@@ -16207,31 +15957,6 @@
               <FileType>1</FileType>
               <FilePath>.\User\ekf.c</FilePath>
             </File>
-          </Files>
-        </Group>
-        <Group>
-          <GroupName>App</GroupName>
-          <Files>
-            <File>
-              <FileName>imu_port.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\User\imu_port.c</FilePath>
-            </File>
-            <File>
-              <FileName>magcal.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\User\magcal.c</FilePath>
-            </File>
-            <File>
-              <FileName>ekf.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\User\ekf.c</FilePath>
-            </File>
-            <File>
-              <FileName>main.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\User\main.c</FilePath>
-            </File>
             <File>
               <FileName>Gauss_elimination.c</FileName>
               <FileType>1</FileType>
@@ -17415,31 +17140,6 @@
               <FileName>ekf.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\User\ekf.c</FilePath>
-            </File>
-          </Files>
-        </Group>
-        <Group>
-          <GroupName>App</GroupName>
-          <Files>
-            <File>
-              <FileName>imu_port.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\User\imu_port.c</FilePath>
-            </File>
-            <File>
-              <FileName>magcal.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\User\magcal.c</FilePath>
-            </File>
-            <File>
-              <FileName>ekf.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\User\ekf.c</FilePath>
-            </File>
-            <File>
-              <FileName>main.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\User\main.c</FilePath>
             </File>
             <File>
               <FileName>Gauss_elimination.c</FileName>
@@ -19006,31 +18706,6 @@
               <FileName>ekf.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\User\ekf.c</FilePath>
-            </File>
-          </Files>
-        </Group>
-        <Group>
-          <GroupName>App</GroupName>
-          <Files>
-            <File>
-              <FileName>imu_port.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\User\imu_port.c</FilePath>
-            </File>
-            <File>
-              <FileName>magcal.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\User\magcal.c</FilePath>
-            </File>
-            <File>
-              <FileName>ekf.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\User\ekf.c</FilePath>
-            </File>
-            <File>
-              <FileName>main.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\User\main.c</FilePath>
             </File>
             <File>
               <FileName>Gauss_elimination.c</FileName>
