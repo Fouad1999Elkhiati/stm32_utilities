@@ -1,6 +1,10 @@
 #ifndef GAUSS_ELIMINATION_H_
 #define GAUSS_ELIMINATION_H_
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 #include <stdio.h>
 #include <math.h>
 #include <stdlib.h>
@@ -32,6 +36,10 @@ float determinant(float* a, float* b, float* tb, int n);
 /* Back substitution. On return b holds the inverse of the original matrix and
    tb holds the solution of Ax = b. Only valid if determinant() was non-zero. */
 void inversion(float* a, float* b, float* tb, int n);
+
+#ifdef __cplusplus
+}
+#endif
 
 /*------------------------------------------*/
 #endif
