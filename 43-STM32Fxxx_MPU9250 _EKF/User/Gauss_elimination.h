@@ -63,15 +63,6 @@ extern "C" {
  * 
 \verbatim
 
-\endverbatim
- *
- * \par Reading Battery Voltage
- *
- * Circuit for battery is integrated inside STM32 device.
- * It can measure a battery, connected to VBAT pin, meant for RTC and backup purpose only.
- *
- * \par Changelog
- *
 @verbatim
  Version 1.0
   - First release
