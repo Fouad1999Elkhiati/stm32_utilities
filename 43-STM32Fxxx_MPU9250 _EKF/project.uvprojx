@@ -1343,9 +1343,6 @@
             </File>
           </Files>
         </Group>
-        <Group>
-          <GroupName>App</GroupName>
-        </Group>
       </Groups>
     </Target>
     <Target>
@@ -2685,9 +2682,6 @@
               <FilePath>.\User\system_stm32f4xx.c</FilePath>
             </File>
           </Files>
-        </Group>
-        <Group>
-          <GroupName>App</GroupName>
         </Group>
       </Groups>
     </Target>
@@ -4029,9 +4023,6 @@
             </File>
           </Files>
         </Group>
-        <Group>
-          <GroupName>App</GroupName>
-        </Group>
       </Groups>
     </Target>
     <Target>
@@ -5369,9 +5360,6 @@
               <FilePath>.\User\system_stm32f4xx.c</FilePath>
             </File>
           </Files>
-        </Group>
-        <Group>
-          <GroupName>App</GroupName>
         </Group>
       </Groups>
     </Target>
@@ -6711,9 +6699,6 @@
             </File>
           </Files>
         </Group>
-        <Group>
-          <GroupName>App</GroupName>
-        </Group>
       </Groups>
     </Target>
     <Target>
@@ -8051,9 +8036,6 @@
               <FilePath>.\User\system_stm32f4xx.c</FilePath>
             </File>
           </Files>
-        </Group>
-        <Group>
-          <GroupName>App</GroupName>
         </Group>
       </Groups>
     </Target>
@@ -9394,9 +9376,6 @@
             </File>
           </Files>
         </Group>
-        <Group>
-          <GroupName>App</GroupName>
-        </Group>
       </Groups>
     </Target>
     <Target>
@@ -10735,9 +10714,6 @@
               <FilePath>.\User\system_stm32f4xx.c</FilePath>
             </File>
           </Files>
-        </Group>
-        <Group>
-          <GroupName>App</GroupName>
         </Group>
       </Groups>
     </Target>
@@ -12079,9 +12055,6 @@
             </File>
           </Files>
         </Group>
-        <Group>
-          <GroupName>App</GroupName>
-        </Group>
       </Groups>
     </Target>
     <Target>
@@ -13421,9 +13394,6 @@
             </File>
           </Files>
         </Group>
-        <Group>
-          <GroupName>App</GroupName>
-        </Group>
       </Groups>
     </Target>
     <Target>
@@ -14762,9 +14732,6 @@
             </File>
           </Files>
         </Group>
-        <Group>
-          <GroupName>App</GroupName>
-        </Group>
       </Groups>
     </Target>
     <Target>
@@ -15836,9 +15803,6 @@
               <FilePath>.\User\system_stm32f4xx.c</FilePath>
             </File>
           </Files>
-        </Group>
-        <Group>
-          <GroupName>App</GroupName>
         </Group>
       </Groups>
     </Target>
@@ -17293,9 +17257,6 @@
               <FilePath>.\User\system_stm32f4xx.c</FilePath>
             </File>
           </Files>
-        </Group>
-        <Group>
-          <GroupName>App</GroupName>
         </Group>
       </Groups>
     </Target>

@@ -35,7 +35,7 @@
 /* Set to 1 only after the magnetometer has been calibrated.
    With an uncalibrated mag the yaw correction fights the gyro and
    makes the estimate worse than leaving yaw to free-run. */
-#define EKF_USE_MAG   0
+#define EKF_USE_MAG   1
 
 #define RAD2DEG       57.29578f
 
@@ -150,6 +150,8 @@ int main(void)
 
         if (imu_port_read(&sample)) {
 
+            TM_DISCO_LedOn(LED_GREEN);
+
             ekf_predict(&ekf, sample.gyro, sample.dt);
 
             /* Returns 0 and skips the update when the accelerometer is
@@ -158,7 +160,11 @@ int main(void)
             ekf_update_accel(&ekf, sample.acc);
 
 #if EKF_USE_MAG
-            ekf_update_mag(&ekf, sample.mag);
+            /* Only when the AK8963 delivered a new reading. Re-applying
+               the same measurement every loop would count it as many
+               independent observations and over-weight the heading. */
+            if (sample.mag_new)
+                ekf_update_mag(&ekf, sample.mag);
 #endif
 
             ekf_euler(&ekf, &roll, &pitch, &yaw);
@@ -177,6 +183,11 @@ int main(void)
 
             TM_SSD1306_UpdateScreen();
         }
+
+        /* LED off while sensor reads are failing; imu_port retries and
+           recovers the bus on its own. */
+        if (!imu_port_bus_ok())
+            TM_DISCO_LedOff(LED_GREEN);
 
         Delayms(10);               /* roughly 100 Hz */
     }

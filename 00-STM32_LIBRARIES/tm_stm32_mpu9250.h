@@ -99,9 +99,10 @@ extern "C" {
  */
 
 typedef enum _TM_MPU9250_Result_t {
-    TM_MPU9250_Result_Ok = 0x00,
-    TM_MPU9250_Result_Error,
-    TM_MPU9250_Result_DeviceNotConnected
+    TM_MPU9250_Result_Ok = 0x00,          /*!< Transfer succeeded, new data stored */
+    TM_MPU9250_Result_Error,              /*!< I2C transfer failed, stored data left unchanged */
+    TM_MPU9250_Result_DeviceNotConnected, /*!< Device did not answer or WHO_AM_I mismatch */
+    TM_MPU9250_Result_NoNewData           /*!< Magnetometer only: bus OK, but no new or no usable (overflow) sample */
 } TM_MPU9250_Result_t;
 
 typedef enum _TM_MPU9250_Device_t {
@@ -154,6 +155,10 @@ typedef struct _TM_MPU9250_t {
 
 TM_MPU9250_Result_t TM_MPU9250_Init(TM_MPU9250_t* MPU9250, TM_MPU9250_Device_t dev);
 
+/* ReadAcce / ReadGyro return Ok, or Error if the I2C transfer failed.
+   On Error the previous values in the structure are left untouched.
+   ReadMag additionally returns NoNewData when the AK8963 has no fresh
+   sample (it runs at 8 Hz) or flagged a magnetic overflow. */
 TM_MPU9250_Result_t TM_MPU9250_ReadAcce(TM_MPU9250_t* MPU9250);
 TM_MPU9250_Result_t TM_MPU9250_ReadGyro(TM_MPU9250_t* MPU9250);
 TM_MPU9250_Result_t TM_MPU9250_ReadMag(TM_MPU9250_t* MPU9250);

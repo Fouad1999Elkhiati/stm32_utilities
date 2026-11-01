@@ -88,6 +88,23 @@ extern "C" {
 \endverbatim
  */
 
+#include <stdint.h>
+
+/**
+ * @defgroup IMU_PORT_Macros
+ * @brief    Library defines
+ * @{
+ */
+
+/** Consecutive failed reads before the I2C bus is recovered and the sensor re-initialized */
+#ifndef IMU_PORT_FAIL_LIMIT
+#define IMU_PORT_FAIL_LIMIT   3
+#endif
+
+/**
+ * @}
+ */
+
 /**
  * @defgroup IMU_PORT_Typedefs
  * @brief    Library Typedefs
@@ -103,6 +120,8 @@ typedef struct {
     float mag[3];     /*!< Calibrated magnetic unit vector, or raw data if uncalibrated */
     float dt;         /*!< Seconds since the previous sample */
     int   mag_valid;  /*!< 0 until a calibration has been solved, then 1 */
+    int   mag_new;    /*!< 1 only if this sample carries a fresh magnetometer reading
+                           (the AK8963 updates at 8 Hz); 0 means mag[] repeats an old one */
 } imu_sample_t;
 
 /**
@@ -128,11 +147,28 @@ int imu_port_init(void);
 /**
  * @brief  Reads all three sensors and fills the sample structure.
  * @param  *s: Pointer to \ref imu_sample_t structure to fill
+ * @note   If accelerometer or gyroscope cannot be read, the sample is rejected and
+ *         *s is left unchanged. After @ref IMU_PORT_FAIL_LIMIT consecutive failures the
+ *         I2C bus is recovered and the MPU9250 re-initialized (takes about 350 ms).
  * @retval Sample status:
  *            - 1: Sample is valid
- *            - 0: dt was implausible, the sample should be skipped rather than fed forward
+ *            - 0: I2C read failed, or dt was implausible; skip the sample rather than feed it forward
  */
 int imu_port_read(imu_sample_t *s);
+
+/**
+ * @brief  Reports whether the sensor bus is currently healthy.
+ * @param  None
+ * @retval 1 if the last read succeeded, 0 while reads are failing
+ */
+int imu_port_bus_ok(void);
+
+/**
+ * @brief  Total number of failed sensor reads since init.
+ * @param  None
+ * @retval Failure count
+ */
+uint32_t imu_port_error_count(void);
 
 /**
  * @brief  Clears the calibration accumulators and begins collecting.
@@ -144,6 +180,7 @@ void imu_port_cal_begin(void);
 /**
  * @brief  Reads one magnetometer sample and folds it into the calibration.
  * @note   Rotate the board through as many orientations as possible while this is being called.
+ * @note   Only fresh samples are added; calls between AK8963 updates add nothing.
  * @param  None
  * @retval Running sample count
  */

@@ -99,6 +99,15 @@ I2C4   |PD12  PD13   |PF1   PF0    |PF14  PF15   |PH11  PH12   |PD12  PB7    |
  * @{
  */
 
+/**
+ * @brief  Timeout in milliseconds passed to every blocking HAL I2C call.
+ *         A stuck bus blocks the caller for up to this long per call.
+ *         Override in defines.h; the default keeps the original behaviour.
+ */
+#ifndef TM_I2C_TIMEOUT
+#define TM_I2C_TIMEOUT                1000
+#endif
+
 /* Clock values */
 #define TM_I2C_CLOCK_STANDARD         100000  /*!< I2C Standard speed */
 #define TM_I2C_CLOCK_FAST_MODE        400000  /*!< I2C Fast mode speed */
@@ -305,6 +314,22 @@ TM_I2C_Result_t TM_I2C_WriteReadRepeatedStart(
 	uint8_t* read_data,
 	uint16_t read_count
 );
+
+/**
+ * @brief  Recovers an I2C bus held low by a slave after an interrupted transfer.
+ *
+ *         Releases the pins from the peripheral, clocks SCL by hand until the slave
+ *         lets go of SDA (at most 9 clocks), issues a STOP condition, resets the
+ *         I2C peripheral through RCC and initializes it again with @ref TM_I2C_Init.
+ *         Slave devices must be re-initialized by the caller afterwards if needed.
+ * @param  *I2Cx: Pointer to I2Cx peripheral to recover
+ * @param  pinspack: Pinspack the peripheral was initialized with. Custom pins are not supported.
+ * @param  clockSpeed: Clock speed in units of Hz to re-initialize the peripheral with
+ * @retval Member of @ref TM_I2C_Result_t enumeration:
+ *            - TM_I2C_Result_Ok: SCL and SDA are both released (high) and the peripheral is re-initialized
+ *            - TM_I2C_Result_Error: unknown pinspack, or a line is still held low
+ */
+TM_I2C_Result_t TM_I2C_BusRecover(I2C_TypeDef* I2Cx, TM_I2C_PinsPack_t pinspack, uint32_t clockSpeed);
 
 /**
  * @}

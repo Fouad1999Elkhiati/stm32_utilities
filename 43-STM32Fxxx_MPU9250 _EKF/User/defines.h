@@ -39,6 +39,10 @@
 //#define RCC_PLLQ              7                      /*!< Used for PLL Q parameter */
 //#define RCC_PLLR              10                     /*!< Used for PLL R parameter, available on STM32F446xx */
 #define NUCLEO_F411
+
+/* I2C: give up on a transfer after 20 ms instead of the library's 1 s,
+   so a bus fault stalls the 100 Hz loop briefly instead of for seconds. */
+#define TM_I2C_TIMEOUT        20
 /* GPS settings */
 //#define GPS_USART             USART1
 //#define GPS_USART_PINSPACK    TM_USART_PinsPack_2
